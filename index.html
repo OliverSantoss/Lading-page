@@ -207,7 +207,8 @@
     <script src="/images/jquery.js"></script>
     <script src="/images/slick.min.js"></script>
     <script>
-        $('.container-slide').slick({
+        var slide = document.getElementsByClassName('container-slide');
+        $(slide).slick({
             dots: true,
             arrows: false,
             speed: 1000,
@@ -223,7 +224,8 @@
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }
-                }],
+                }
+            ],
         });
     </script>
     <script>
